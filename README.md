@@ -13,12 +13,27 @@ https://www.mono-project.com/download/stable/
 Maak op een toegankelijk pad een tekstbestant genaamd <b>config.ini</b> aan en voer
 de minimaal vereiste attributen in:<p>
 
----
+```
 localip=172.16.0.20 (vul hier het eigen LAN IP-adres in)
 targetip=172.16.0.21 (vul hier het IP adres van de andere server in)<br>
 port=60000 (vul hier het TCP poortnummer in waarmee de servers onderling communiceren)<br>
 command=C:\WATCHOUT 6\WATCHPOINT.exe (vul hier het pad in naar het uit te voeren programma)<br>
----
+```
+  
 
 <h3>Maak een opstartscript</h3>
 Maak in BATCH een opstartscript waarmee je de <b>TimeWarp-ServerStartupSync</b> start.
+
+```
+@echo off
+echo -----------------------------
+echo Startup script
+echo -----------------------------
+timeout 5
+"C:\Program Files\Mono\bin\mono.exe" "C:\ServerStarter\TimeWarp-ServerStartup.dll" /config=C:/ServerStartup/config.ini
+```
+
+Verander C:\ServerStarter\TimeWarp-ServerStartup.dll en /config=C:/ServerStartup/config.ini naar de paden
+waar je deze software en het configuratiebestand hebt geplaatst.
+
+Sla vervolgens het batch bestand op en laat dit mee opstarten met Windows.
