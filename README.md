@@ -14,7 +14,7 @@ Maak op een toegankelijk pad een tekstbestant genaamd <b>config.ini</b> aan en v
 de minimaal vereiste attributen in:<p>
 
 <code>
-  localip=172.16.0.20 (vul hier het eigen LAN IP-adres in)<br>
+  localip=172.16.0.20 (vul hier het eigen LAN IP-adres in)\n
   targetip=172.16.0.21 (vul hier het IP adres van de andere server in)<br>
   port=60000 (vul hier het TCP poortnummer in waarmee de servers onderling communiceren)<br>
   command=C:\WATCHOUT 6\WATCHPOINT.exe (vul hier het pad in naar het uit te voeren programma)<br>
