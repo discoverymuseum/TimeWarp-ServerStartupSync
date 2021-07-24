@@ -14,11 +14,12 @@ Maak op een toegankelijk pad een tekstbestant genaamd <b>config.ini</b> aan en v
 de minimaal vereiste attributen in:<p>
 
 <code>
-  localip=172.16.0.20 (vul hier het eigen LAN IP-adres in)
-  targetip=172.16.0.21 (vul hier het IP adres van de andere server in)
-  port=60000 (vul hier het TCP poortnummer in waarmee de servers onderling communiceren)
-  command=C:\WATCHOUT 6\WATCHPOINT.exe (vul hier het pad in naar het uit te voeren programma)
+  localip=172.16.0.20 (vul hier het eigen LAN IP-adres in)<br>
+  targetip=172.16.0.21 (vul hier het IP adres van de andere server in)<br>
+  port=60000 (vul hier het TCP poortnummer in waarmee de servers onderling communiceren)<br>
+  command=C:\WATCHOUT 6\WATCHPOINT.exe (vul hier het pad in naar het uit te voeren programma)<br>
   </code>
+  <p>
 
 <h3>Maak een opstartscript</h3>
 Maak in BATCH een opstartscript waarmee je de <b>TimeWarp-ServerStartupSync</b> start.
