@@ -11,10 +11,13 @@ https://www.mono-project.com/download/stable/
 
 <h3>Maak een configuratiebestand</h3>
 Maak op een toegankelijk pad een tekstbestant genaamd <b>config.ini</b> aan en voer
-de minimaal vereiste attributen in:
+de minimaal vereiste attributen in:<p>
 
 <code>
-  dadada
+  localip=172.16.0.20 (vul hier het eigen LAN IP-adres in)
+  targetip=172.16.0.21 (vul hier het IP adres van de andere server in)
+  port=60000 (vul hier het TCP poortnummer in waarmee de servers onderling communiceren)
+  command=C:\WATCHOUT 6\WATCHPOINT.exe (vul hier het pad in naar het uit te voeren programma)
   </code>
 
 <h3>Maak een opstartscript</h3>
